@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Glossary of key terms for the course, from tolerance and clearance to kerf and the connection standard.">
+<title>Glossary — Digital Manufacturing &amp; Engineering Design</title>
+<script>try{var t=localStorage.getItem('dmed-theme');if(t==='dark')document.documentElement.dataset.theme='dark';}catch(e){}</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">DIGITAL MFG <em>&amp; ED</em></a>
+  <div class="nav-links">
+    <a href="unit-1.html">U1 · Foundations</a>
+    <a href="unit-2.html">U2 · CAD</a>
+    <a href="unit-3.html">U3 · Fingerboard</a>
+    <a href="unit-4.html">U4 · Laser</a>
+    <a href="unit-5.html">U5 · Capstone</a>
+    <a href="lab-reference.html">Lab</a>
+    <a href="glossary.html" aria-current="page">Glossary</a>
+    <a href="resources.html">Resources</a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle light or dark theme">
+      <span class="light-label">◑ Dark</span><span class="dark-label">◐ Light</span>
+    </button>
+  </div>
+</nav>
+<header class="unit-hero" style="--c:var(--cad)">
+  <div class="unit-eyebrow">Reference · Key terms</div>
+  <h1 class="unit-title">Glossary</h1>
+  <p class="unit-intro">The vocabulary that runs through the course — the words for measuring precisely, modeling in CAD, and making parts that actually fit. Each term notes the week it first shows up.</p>
+</header>
+<div class="gloss-wrap">
+  <div class="gloss" style="--c:var(--draw)">
+    <div class="gloss-week">Wk 5</div>
+    <div class="gloss-term">Tolerance</div>
+    <div class="gloss-def">The allowed difference between the size you design and the size a machine actually makes. Managing tolerance is the spine of the whole course.</div>
+  </div>
+  <div class="gloss" style="--c:var(--draw)">
+    <div class="gloss-week">Wk 5</div>
+    <div class="gloss-term">Interference</div>
+    <div class="gloss-def">When two parts overlap and won't fit — <b>too tight</b>. The opposite of slop.</div>
+  </div>
+  <div class="gloss" style="--c:var(--draw)">
+    <div class="gloss-week">Wk 5</div>
+    <div class="gloss-term">Slop</div>
+    <div class="gloss-def">When a fit is <b>too loose</b> and wobbles. The opposite of interference; you aim to land between the two.</div>
+  </div>
+  <div class="gloss" style="--c:var(--print)">
+    <div class="gloss-week">Wk 8</div>
+    <div class="gloss-term">Clearance</div>
+    <div class="gloss-def">Extra space added on purpose so parts fit: a hole = peg + clearance. How you avoid both interference and slop.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 5</div>
+    <div class="gloss-term">Deviation</div>
+    <div class="gloss-def">Measured size minus designed size — how far off the machine was. You log it for the calibration cube.</div>
+  </div>
+  <div class="gloss" style="--c:var(--draw)">
+    <div class="gloss-week">Wk 1</div>
+    <div class="gloss-term">Caliper</div>
+    <div class="gloss-def">A precision tool that reads thickness, diameter, depth, and inside openings to a thousandth of an inch. It never leaves your side.</div>
+  </div>
+  <div class="gloss" style="--c:var(--draw)">
+    <div class="gloss-week">Wk 1</div>
+    <div class="gloss-term">Dial vs. digital caliper</div>
+    <div class="gloss-def">Two caliper types you'll read. The digital one toggles between inches and millimeters.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 4</div>
+    <div class="gloss-term">Parametric CAD</div>
+    <div class="gloss-def">Computer-aided design where dimensions drive the model — change a number and the part updates. You use Onshape.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 4</div>
+    <div class="gloss-term">Onshape</div>
+    <div class="gloss-def">The browser-based CAD tool for the course. You set your units to inches to match your calipers.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 4</div>
+    <div class="gloss-term">Sketch</div>
+    <div class="gloss-def">A 2D outline on a plane that you turn into 3D with features like extrude and revolve.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 4</div>
+    <div class="gloss-term">Extrude</div>
+    <div class="gloss-def">Pushing a 2D sketch into 3D to give it thickness.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 6</div>
+    <div class="gloss-term">Revolve</div>
+    <div class="gloss-def">Spinning a sketch around an axis to make round shapes — how a ramp or bowl gets formed.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 6</div>
+    <div class="gloss-term">Mate</div>
+    <div class="gloss-def">A relationship that joins parts in an assembly and controls how they move.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 6</div>
+    <div class="gloss-term">Degrees of freedom</div>
+    <div class="gloss-def">The ways a part can still move after it's mated — the capstone teams use mates and DOF to connect sections.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 4</div>
+    <div class="gloss-term">Interference (CAD)</div>
+    <div class="gloss-def">A check in CAD that finds where two bodies overlap before you ever print.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 4</div>
+    <div class="gloss-term">Measurement bridge</div>
+    <div class="gloss-def">A notebook/CAD entry that links an on-screen dimension to a real caliper reading, keeping the model honest.</div>
+  </div>
+  <div class="gloss" style="--c:var(--draw)">
+    <div class="gloss-week">Wk 2</div>
+    <div class="gloss-term">Orthographic views</div>
+    <div class="gloss-def">The straight-on front, top, and side views of an object, drawn in correct projection.</div>
+  </div>
+  <div class="gloss" style="--c:var(--draw)">
+    <div class="gloss-week">Wk 2</div>
+    <div class="gloss-term">Isometric view</div>
+    <div class="gloss-def">A single 3D-looking view that shows three faces at once.</div>
+  </div>
+  <div class="gloss" style="--c:var(--draw)">
+    <div class="gloss-week">Wk 2</div>
+    <div class="gloss-term">Multiview drawing</div>
+    <div class="gloss-def">A drawing that combines the orthographic views plus dimensions and a title block.</div>
+  </div>
+  <div class="gloss" style="--c:var(--draw)">
+    <div class="gloss-week">Wk 2</div>
+    <div class="gloss-term">Title block</div>
+    <div class="gloss-def">The labeled corner of a drawing: name, object, date, and units.</div>
+  </div>
+  <div class="gloss" style="--c:var(--print)">
+    <div class="gloss-week">Wk 11</div>
+    <div class="gloss-term">Working drawing</div>
+    <div class="gloss-def">A complete, dimensioned drawing a manufacturer could build the part from — generated from your model.</div>
+  </div>
+  <div class="gloss" style="--c:var(--print)">
+    <div class="gloss-week">Wk 5</div>
+    <div class="gloss-term">FDM</div>
+    <div class="gloss-def">Fused Deposition Modeling — the 3D-printing method the Bambu P1S uses, laying down melted plastic layer by layer.</div>
+  </div>
+  <div class="gloss" style="--c:var(--print)">
+    <div class="gloss-week">Wk 5</div>
+    <div class="gloss-term">PLA</div>
+    <div class="gloss-def">The plastic filament used for printing — the house default at a 0.2 mm layer height.</div>
+  </div>
+  <div class="gloss" style="--c:var(--print)">
+    <div class="gloss-week">Wk 5</div>
+    <div class="gloss-term">Slicer</div>
+    <div class="gloss-def">Software (Bambu Studio) that turns a 3D model into machine instructions and estimates print time.</div>
+  </div>
+  <div class="gloss" style="--c:var(--print)">
+    <div class="gloss-week">Wk 8</div>
+    <div class="gloss-term">Design for printing</div>
+    <div class="gloss-def">Adjusting a model so it prints reliably — managing overhangs, thin walls, and tiny features.</div>
+  </div>
+  <div class="gloss" style="--c:var(--laser)">
+    <div class="gloss-week">Wk 12</div>
+    <div class="gloss-term">Vector vs. raster</div>
+    <div class="gloss-def">A laser cuts/scores along vector lines and engraves images as a raster (row-by-row) pattern.</div>
+  </div>
+  <div class="gloss" style="--c:var(--laser)">
+    <div class="gloss-week">Wk 3</div>
+    <div class="gloss-term">Score</div>
+    <div class="gloss-def">A shallow laser line that lets material fold without being cut through — how the display stand bends.</div>
+  </div>
+  <div class="gloss" style="--c:var(--laser)">
+    <div class="gloss-week">Wk 12</div>
+    <div class="gloss-term">Kerf</div>
+    <div class="gloss-def">The width of material the laser beam burns away. A slot cut to the exact size comes out too big — so you design around it.</div>
+  </div>
+  <div class="gloss" style="--c:var(--laser)">
+    <div class="gloss-week">Wk 13</div>
+    <div class="gloss-term">Press-fit (tab-and-slot)</div>
+    <div class="gloss-def">A joint that holds with no glue because the slot is cut narrower than the material by the measured kerf.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cap)">
+    <div class="gloss-week">Wk 14</div>
+    <div class="gloss-term">Connection standard</div>
+    <div class="gloss-def">The shared peg size, spacing, and clearance every capstone team builds to, so 12 sections snap together.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cap)">
+    <div class="gloss-week">Wk 14</div>
+    <div class="gloss-term">Capstone</div>
+    <div class="gloss-def">The final project: twelve teams build one connected skate park, graded as a single 100-point project.</div>
+  </div>
+  <div class="gloss" style="--c:var(--cad)">
+    <div class="gloss-week">Wk 5</div>
+    <div class="gloss-term">Single-operator loop</div>
+    <div class="gloss-def">The course rhythm: you design in class, the teacher runs the machine between sessions, you measure and iterate next time.</div>
+  </div>
+</div>
+
+<footer>
+  <div>
+    <div class="footer-logo">DIGITAL MFG <em>&amp; ED</em></div>
+    <div class="footer-sub">Stauffer Middle School · Downey Unified · Fall 2026<br>18-week course · measure → model → make</div>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h5>Units</h5>
+      <a href="unit-1.html">U1 · Foundations</a>
+      <a href="unit-2.html">U2 · CAD in Onshape</a>
+      <a href="unit-3.html">U3 · The Fingerboard</a>
+      <a href="unit-4.html">U4 · Laser &amp; Rack</a>
+      <a href="unit-5.html">U5 · Capstone</a>
+    </div>
+    <div class="footer-col">
+      <h5>Reference</h5>
+      <a href="lab-reference.html">Lab &amp; safety</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="resources.html">Pacing &amp; rubrics</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/theme.js" defer></script>
+</body>
+</html>

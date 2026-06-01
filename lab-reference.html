@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Lab reference: machines, the laser rule of thumb, measurement standards, and safety rules.">
+<title>Lab Reference — Digital Manufacturing &amp; Engineering Design</title>
+<script>try{var t=localStorage.getItem('dmed-theme');if(t==='dark')document.documentElement.dataset.theme='dark';}catch(e){}</script>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<nav class="site-nav">
+  <a class="nav-logo" href="index.html">DIGITAL MFG <em>&amp; ED</em></a>
+  <div class="nav-links">
+    <a href="unit-1.html">U1 · Foundations</a>
+    <a href="unit-2.html">U2 · CAD</a>
+    <a href="unit-3.html">U3 · Fingerboard</a>
+    <a href="unit-4.html">U4 · Laser</a>
+    <a href="unit-5.html">U5 · Capstone</a>
+    <a href="lab-reference.html" aria-current="page">Lab</a>
+    <a href="glossary.html">Glossary</a>
+    <a href="resources.html">Resources</a>
+    <button class="theme-toggle" data-theme-toggle aria-label="Toggle light or dark theme">
+      <span class="light-label">◑ Dark</span><span class="dark-label">◐ Light</span>
+    </button>
+  </div>
+</nav>
+<header class="unit-hero" style="--c:var(--laser)">
+  <div class="unit-eyebrow">Reference · For the single operator</div>
+  <h1 class="unit-title">Lab Reference</h1>
+  <p class="unit-intro">The teacher operates every machine; students design and measure but never run a printer or a laser. This page is the quick reference for the lab — the machines, which one to reach for, the measurement standards, and the standing safety rules.</p>
+</header>
+
+<section class="section">
+  <div class="section-label">The lab</div>
+  <h2 class="section-headline">Machines &amp; who runs them</h2>
+  
+  <div class="machines-grid">
+    <div class="machine-card" style="--c:var(--print)">
+      <div class="mc-type">3D Printer · FDM</div><div class="mc-name">Bambu Lab P1S</div>
+      <div class="mc-spec">Bambu Studio · PLA · 0.2 mm</div>
+      <div class="mc-desc">The course workhorse — every print, from the calibration cube to the capstone sections.</div>
+    </div>
+    <div class="machine-card" style="--c:var(--laser)">
+      <div class="mc-type">Laser · CO&#8322; 40 W</div><div class="mc-name">Dremel LC40</div>
+      <div class="mc-spec">~20 × 12 in bed · manual focus</div>
+      <div class="mc-desc">The heavy cutter: thicker and faster, and the only machine that cuts <b>clear and colored acrylic</b>. Runs Dremel's own software (not LightBurn). Discontinued — treat it as irreplaceable.</div>
+    </div>
+    <div class="machine-card" style="--c:var(--laser)">
+      <div class="mc-type">Laser · Diode 20 W</div><div class="mc-name">Flux Ador</div>
+      <div class="mc-spec">~16.9 × 11.8 in · autofocus · air assist</div>
+      <div class="mc-desc">The finer-detail engraver. Cuts wood, plywood (~3 mm), leather, card, fabric, and <b>dark/black acrylic only</b> — no clear, no color printing. Beam Studio native; LightBurn via bridge cable.</div>
+    </div>
+    <div class="machine-card muted" style="--c:var(--cnc)">
+      <div class="mc-type">CNC Router</div><div class="mc-name">X-Carve Pro 4×2</div>
+      <div class="mc-spec">Easel</div>
+      <div class="mc-desc">In the lab, but <b>not used in this course</b> — an optional teacher demo only.</div>
+    </div>
+  </div>
+  <div class="rule-box">
+    <h4>Which laser?</h4>
+    <ul>
+      <li><b>Clear or colored acrylic</b> → LC40 only. The Ador's diode wavelength can't cut it.</li>
+      <li><b>Wood, plywood, leather, card, or dark material</b> → either machine.</li>
+      <li><b>Thicker or faster cutting</b> → LC40.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="prose">
+  <div class="section-label">Measurement</div>
+  <h2 class="section-headline" style="margin-bottom:1rem;">How we measure</h2>
+  <p><strong>Inches are the default.</strong> The course measures in inches with calipers in every unit; the dial and digital calipers from Week 1 never go back in the drawer.</p>
+  <p><strong>Millimeters where the part is metric.</strong> The fingerboard deck and its holes (Week 9), the working drawing (Week 11), the laser kerf and rack (Weeks 12–13), and the capstone connection standard are all in mm.</p>
+  <p><strong>1 in = 25.4 mm</strong> is taught in Week 8 and used for real in Week 9, when the 96 × 32 mm deck meets real trucks. The digital caliper's in/mm toggle, introduced in Week 1, becomes load-bearing there.</p>
+  <p><strong>The refrain, all semester:</strong> too tight = interference, too loose = slop. Clearance, kerf, and the capstone connection standard are all ways of landing in between.</p>
+</section>
+
+<section>
+  <div class="prose"><div class="section-label">Safety</div><h2 class="section-headline">The standing rules</h2></div>
+  <div class="safety-grid">
+    <div class="safety-card" style="--c:var(--print)">
+      <h4>3D printer</h4>
+      <ul>
+        <li>The nozzle (~200 °C) and bed are hot during and just after a print — students never reach into the machine.</li>
+        <li>The teacher removes parts with the proper tool; the build area stays ventilated.</li>
+        <li>No student touches the printer mid-print. The single-operator rule is the safety rule.</li>
+      </ul>
+    </div>
+    <div class="safety-card" style="--c:var(--laser)">
+      <h4>Lasers</h4>
+      <ul>
+        <li>The teacher operates both lasers; students never run them.</li>
+        <li>Fume extraction runs the whole time and the lid stays closed while cutting.</li>
+        <li>Approved materials only — never PVC, vinyl, or unknown plastics; they release toxic gas.</li>
+        <li>Laser + wood or paper is a fire risk: never leave a job unattended, keep the bed clear, keep the extinguisher accessible.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="footer-logo">DIGITAL MFG <em>&amp; ED</em></div>
+    <div class="footer-sub">Stauffer Middle School · Downey Unified · Fall 2026<br>18-week course · measure → model → make</div>
+  </div>
+  <div class="footer-cols">
+    <div class="footer-col">
+      <h5>Units</h5>
+      <a href="unit-1.html">U1 · Foundations</a>
+      <a href="unit-2.html">U2 · CAD in Onshape</a>
+      <a href="unit-3.html">U3 · The Fingerboard</a>
+      <a href="unit-4.html">U4 · Laser &amp; Rack</a>
+      <a href="unit-5.html">U5 · Capstone</a>
+    </div>
+    <div class="footer-col">
+      <h5>Reference</h5>
+      <a href="lab-reference.html">Lab &amp; safety</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="resources.html">Pacing &amp; rubrics</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/theme.js" defer></script>
+</body>
+</html>
